@@ -1,0 +1,36 @@
+.social-icons {
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer */
+  }
+  
+  .social-icons::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+  }
+  
+  .social-icons::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.5) 0%, transparent 100%);
+    left: 0;
+  }
+  
+  .social-icons::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.5) 0%, transparent 100%);
+    right: 0;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+  }

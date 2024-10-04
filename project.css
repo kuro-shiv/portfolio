@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: small;
+    margin: 3px;
+    padding: 3px;
+    background-color: #000000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar {
+    width: auto;
+    height: 75px;
+    margin: auto;
+    padding: 10px;
+}
+
+.menu {
+    width: 600px;
+    padding-right: 2px;
+    float: right;
+    height: 70px;
+    padding-left: 4%;
+}
+
+ul {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover {
+    color: #ff7200;
+}
+
+h1 {
+    text-align: center;
+    color: #cfcece;
+    margin: 20px 0;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: nowrap; /* Ensure the gallery items don't wrap */
+    justify-content: flex-start; /* Start from the left */
+    align-items: center; /* Center vertically */
+    overflow-x: hidden; /* Hidden initially */
+    padding: 10px; /* Padding to contain the scrollable area */
+    white-space: nowrap; /* Prevent wrapping */
+}
+
+.gallery-card {
+    flex: 0 0 auto; /* Don't grow or shrink, fixed width */
+    width: 250px; /* Set a fixed width */
+    height: auto;
+    margin: 15px;
+    padding: 10px;
+    border: 1px solid #474545;
+    border-radius: 8px;
+    background-color: #8d8a8a;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-x: hidden; /* No horizontal scroll on individual cards */
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    white-space: nowrap; /* Prevent wrapping */
+}
+
+.gallery-card img {
+    width: 100%; /* Ensure images fill their containers */
+    height: auto;
+    border-radius: 4px;
+}
+
+.gallery-card p {
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+    margin-top: 5px; /* Add a bit of space between image and text */
+}
+
+footer{
+    background-color: #000;
+    display: block;
+    color: #f9f2f2;
+    text-align: center;
+    position: fixed;
+    left: 0%;
+    bottom: 0%;
+    width: 100%;
+}
+
+
+/* Arrows */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: #000;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#left-arrow {
+    left: 10px;
+}
+
+#right-arrow {
+    right: 10px;
+}
